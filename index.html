@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AireCaribeSeguro | Expertos en Protección Digital y Ciberseguridad</title>
+    <meta name="description" content="Blog informativo y consultoría en ciberseguridad. Protege tus activos digitales con las mejores prácticas y auditorías de seguridad.">
+    
+    <style>
+        /* Estética "Cyber" Profesional */
+        :root {
+            --bg-dark: #0a192f;
+            --accent-cyan: #64ffda;
+            --text-slate: #8892b0;
+            --text-white: #e6f1ff;
+            --card-bg: #112240;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-slate);
+            line-height: 1.6;
+        }
+
+        /* Header - Requisito: Navegación clara */
+        header {
+            background: rgba(10, 25, 47, 0.95);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--card-bg);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            letter-spacing: -1px;
+        }
+
+        .logo span { color: var(--text-white); }
+
+        nav a {
+            color: var(--text-white);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--accent-cyan); }
+
+        /* Hero Section - Propuesta de Valor Única */
+        .hero {
+            padding: 100px 5% 60px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            color: var(--text-white);
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero span { color: var(--accent-cyan); }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 35px;
+        }
+
+        .btn {
+            background: transparent;
+            color: var(--accent-cyan);
+            border: 1px solid var(--accent-cyan);
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: rgba(100, 255, 218, 0.1);
+        }
+
+        /* Blog Section */
+        .container {
+            max-width: 1100px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .post-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            transition: 0.3s;
+        }
+
+        .post-card:hover {
+            border-color: var(--accent-cyan);
+            transform: translateY(-5px);
+        }
+
+        .post-card h3 {
+            color: var(--text-white);
+            margin-bottom: 15px;
+        }
+
+        /* Formulario - Captación Ética de Leads */
+        .contact-area {
+            background: #020c1b;
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .form-wrap {
+            max-width: 500px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+        }
+
+        input, textarea {
+            width: 100%;
+            background: var(--bg-dark);
+            border: 1px solid var(--text-slate);
+            padding: 12px;
+            margin-bottom: 20px;
+            color: white;
+            border-radius: 4px;
+        }
+
+        input:focus { border-color: var(--accent-cyan); outline: none; }
+
+        /* Footer - CRÍTICO: Información Legal y Transparencia */
+        footer {
+            padding: 60px 5% 30px;
+            border-top: 1px solid var(--card-bg);
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        .legal-links {
+            margin: 25px 0;
+        }
+
+        .legal-links a {
+            color: var(--text-slate);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .legal-links a:hover { color: var(--accent-cyan); }
+
+        .address-info {
+            margin-bottom: 20px;
+            color: var(--text-white);
+        }
+
+        @media (max-width: 768px) {
+            header { flex-direction: column; gap: 15px; }
+            .hero { padding-top: 60px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">airecaribe<span>seguro</span></a>
+        <nav>
+            <a href="#blog">Blog</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Auditoría</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Blindamos tu <span>Presencia Digital</span> con Inteligencia Caribeña</h1>
+        <p>En airecaribeseguro no solo detectamos amenazas; creamos culturas de prevención para empresas y profesionales que no pueden permitirse el tiempo de inactividad.</p>
+        <a href="#contacto" class="btn">Solicitar Diagnóstico de Seguridad</a>
+    </section>
+
+    <div class="container" id="blog">
+        <h2 style="color: var(--text-white); margin-bottom: 40px; text-align: center;">Últimas Actualizaciones del Blog</h2>
+        <div class="grid">
+            <article class="post-card">
+                <h3>Phishing en 2026: Cómo Detectarlo</h3>
+                <p>Las tácticas han evolucionado. Aprende a identificar correos fraudulentos que utilizan IA para suplantar identidades bancarias.</p>
+            </article>
+            <article class="post-card">
+                <h3>Seguridad en la Nube para PYMES</h3>
+                <p>Guía práctica para configurar tus servicios de almacenamiento sin dejar puertas traseras abiertas a atacantes externos.</p>
+            </article>
+            <article class="post-card">
+                <h3>El fin de las contraseñas</h3>
+                <p>Análisis sobre los sistemas Passkey y por qué deberías implementarlos hoy mismo en tu flujo de trabajo profesional.</p>
+            </article>
+        </div>
+    </div>
+
+    <section class="contact-area" id="contacto">
+        <div class="form-wrap">
+            <h2 style="color: var(--text-white); margin-bottom: 25px;">¿Hablamos de tu Seguridad?</h2>
+            <form action="#">
+                <input type="text" placeholder="Nombre o Empresa" required>
+                <input type="email" placeholder="Correo Corporativo" required>
+                <textarea rows="4" placeholder="Cuéntanos brevemente tu necesidad..."></textarea>
+                <button type="submit" class="btn" style="width: 100%; cursor: pointer; background: var(--accent-cyan); color: var(--bg-dark);">Enviar Consulta</button>
+            </form>
+            <p style="margin-top: 15px; font-size: 0.7rem;">Sus datos están protegidos bajo cifrado de extremo a extremo. No enviamos spam.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="address-info">
+            <p><strong>AireCaribeSeguro Tech Solutions S.A.</strong></p>
+            <p>Centro de Operaciones: Av. Tecnológica 789, Ciudad de Panamá</p>
+            <p>Contacto: oficial@airecaribeseguro.com | +507 800-SAFE</p>
+        </div>
+
+        <div class="legal-links">
+            <a href="#">AVISO LEGAL</a>
+            <a href="#">POLÍTICA DE PRIVACIDAD</a>
+            <a href="#">POLÍTICA DE COOKIES</a>
+            <a href="#">TÉRMINOS DE SERVICIO</a>
+            <a href="#">CENTRO DE AYUDA</a>
+        </div>
+
+        <p>&copy; 2026 AireCaribeSeguro. La seguridad es un proceso, no un producto.</p>
+    </footer>
+
+</body>
+</html>
